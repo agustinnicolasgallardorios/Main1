@@ -1,0 +1,502 @@
+<html>
+
+    <head> 
+        <title> CreamNuke </title>
+        <meta name="viewport", content=" width=device-width, initial-scale= 1.0 ">
+    </head>
+
+    <body>
+      
+        <nav class="menu"> 
+            <div class="nav-menu"> 
+                <input type="checkbox" id="check" class="checkbtn">   
+                <label for="check" class="checkbtn">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>   
+                </label>
+                <ul>
+                    <a href="">Inicio</a>
+                    <a href="">Sucursales</a>
+                    <a href="">Servicios</a>
+                    <a href="">Contacto</a>
+                </ul>
+            </div>
+            <div class="logo">
+                <h1> CreamNuke </h1>
+            </div>
+       </nav>
+
+       <section class="section-1">
+       </section>
+       <h1 class="h1"> Los mejores helados de la zona </h1>
+       <p class="p"> Encontranos en todos lados.</p>
+
+       <section class="section-2">
+       </section>
+       <h1 class="h1-left"> Las mejores infraestructuras. </h1>
+       <p class="p-left"> Con la mejor decoracion.</p>
+
+       <section class="section-3">
+       </section>
+       <div class="bar-1"></div>
+       <div class="title">
+        <h1> Asistentes</h1>
+       </div>
+       <div class="bar-2"></div>
+       <div class="title-2">
+        <h1> Contactos</h1>
+       </div>
+       <div class="bar-3"></div>
+       <div class="title-3">
+        <h1> Redes Sociales</h1>
+       </div>
+       <div class="bar-4"></div>
+       <div class="title-4">
+        <h1> Sucursales</h1>
+       </div>
+
+       <form class="form">
+        <h1> Envianos tu consulta</h1>
+        <p> Nombre </p>
+        <input type="text" class="nombre">
+        <p> Apellido </p>
+        <input type="text" class="apellido">
+        <p> Escribinos tu queja </p>
+        <input type="text" class="queja">
+        <button class="enviar"> enviar </button>
+       </form>
+
+       <footer class="footer">
+        <p> Creado por Agustin Gallardo </p>
+       </footer>
+
+
+
+
+    </body>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dancing+Script&family=Merriweather:wght@300&family=Montserrat:wght@200;500&family=Oswald:wght@200&family=Shrikhand&display=swap');
+
+        .logo{
+            font-size: 25px;
+            margin-top: 38px;
+            margin-left: 20px;
+            font-family: 'Dancing Script';
+            color: white;
+        }
+    
+        .menu{
+            position: fixed;
+            margin-top: -10px;
+            margin-left: -10px;
+            width: 102%;
+            height: 100px;
+            background-color: rgb(3, 169, 211);
+        }
+
+        .line1{
+            margin-top: 10px;
+            margin-left: 5px;
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            background-color:  rgb(61, 61, 61);
+            border-radius: 10px;
+        }
+
+        .line2{
+            margin-top: 23px;
+            margin-left: 5px;
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            background-color:  rgb(61, 61, 61);
+            border-radius: 10px;
+        }
+
+        .line3{
+            margin-top: 36px;
+            margin-left: 5px;
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            background-color: rgb(61, 61, 61);
+            border-radius: 10px;
+        }
+
+        .checkbtn{
+            display: block;
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 85%;
+            transition: 0.5s;
+            background-color: rgb(0, 99, 180);
+        }
+
+        .checkbtn:hover{
+            transition: 0.5s;
+            background-color: rgb(105, 0, 88);
+            opacity: 2px;
+        }
+
+        .nav-menu ul{
+            position: fixed;
+            left: -110%;
+            margin-top: 100px;
+            background-color: rgb(83, 6, 54);
+            opacity: 0.8;
+            width: 410px;
+            height: 300px;
+            transition: all 1s;
+        }
+
+        .nav-menu ul a{
+            margin-top: 18px;
+            margin-right: 65px;
+            font-family: 'Oswald';
+            text-decoration: none;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            font-size: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu ul li:last-child{
+            background: none;
+            padding: 1rem;
+        }
+
+        #check:checked ~ ul{
+            left: 0;
+            transition: all 1s;
+        }
+
+        .section-1{
+            margin-left: -10px;
+            width: 105%;
+            height: 80%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(https://estaticos-cdn.elperiodico.com/clip/0d07bb4e-d851-4ce4-bb5f-1582ff3b6ae6_alta-libre-aspect-ratio_default_0.jpg);
+        }
+
+        .section-2{
+            margin-left: -10px;
+            width: 105%;
+            height: 80%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(https://uploads-ssl.webflow.com/642f26ea0d34e06e4c51fef2/642f26ea0d34e047c051ff66_header_montar-negocio%401280.webp);
+        }
+
+        .h1{
+            font-family: 'Dancing Script';
+            margin-top: -100px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .p{
+            font-family: 'Oswald';
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .h1-left{
+            font-family: 'Dancing Script';
+            margin-left: 25%;
+            margin-top: -100px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .p-left{
+            font-family: 'Oswald';
+            margin-left: 68%;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-3{
+            margin-left: -10px;
+            width: 105%;
+            height: 340%;
+            background-color: black;
+        }
+
+        .bar-1{
+            margin-left: 40px;
+            margin-top: -2350px;
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            background-image: url(https://www.linksolution.com.ar/wp-content/uploads/2020/11/habilidades-call-center.jpg);
+            border-radius: 1000px;
+        }
+
+        .bar-2{
+            margin-top: 50px;
+            margin-left: 40px;
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            background-image: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2015/10/126831-sincronizar-pasar-contactos-iphone-android-viceversa.jpg?tf=3840x);
+            border-radius: 1000px;
+        }
+
+        .bar-3{
+            margin-top: 50px;
+            margin-left: 40px;
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            background-image: url(https://metricool.com/wp-content/uploads/ALL-SOCIAL-MEDIA-scaled.jpg);
+            border-radius: 1000px;
+        }
+
+        .bar-4{
+            margin-top: 50px;
+            margin-left: 40px;
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            background-image: url(https://media.tycsports.com/files/2021/11/23/363064/noche-de-las-heladerias_862x485.jpg);
+            border-radius: 1000px;
+        }
+
+        .title{
+            background-color: rgb(105, 0, 88);
+            border-radius: 60px;
+            margin-left: 55px;
+            width: 350px;
+            height: 100px;
+        }
+
+        .title-2{
+            background-color: rgb(105, 0, 88);
+            border-radius: 60px;
+            margin-left: 55px;
+            width: 350px;
+            height: 100px;
+        }
+
+        .title-3{
+            background-color: rgb(105, 0, 88);
+            border-radius: 60px;
+            margin-left: 55px;
+            width: 350px;
+            height: 100px;
+        }
+
+        .title-4{
+            background-color: rgb(105, 0, 88);
+            border-radius: 60px;
+            margin-left: 55px;
+            width: 350px;
+            height: 100px;
+        }
+
+        .title h1{
+            padding: 30px;
+            color:white;
+            font-family: 'Dancing Script';
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .title-2 h1{
+            padding: 30px;
+            color:white;
+            font-family: 'Dancing Script';
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .title-3 h1{
+            padding: 30px;
+            color:white;
+            font-family: 'Dancing Script';
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .title-4 h1{
+            padding: 30px;
+            color:white;
+            font-family: 'Dancing Script';
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .form{
+            background-color: rgb(255, 225, 230);
+            margin-top: 80px;
+            margin-left: -10px;
+            width: 105%;
+            height: 80%;
+            padding-top: 2px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Dancing Script';
+            color: white;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        }
+
+
+        .nombre{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgb(61, 61, 61);
+            color:white;
+            border: none;
+            background-color: rgba(213, 168, 255, 0.39);
+            margin-top: 10px;
+            width: 350px;
+            height: 30px;
+            border-radius: 8px;
+        }
+
+        .apellido{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgb(61, 61, 61);
+            color:white;
+            border: none;
+            background-color: rgba(213, 168, 255, 0.39);
+            margin-top: 10px;
+            width: 350px;
+            height: 30px;
+            border-radius: 8px;
+        }
+
+        .queja{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgb(61, 61, 61);
+            color:white;
+            border: none;
+            background-color: rgba(213, 168, 255, 0.39);
+            margin-top: 10px;
+            width: 350px;
+            height: 140px;
+            border-radius: 8px;
+        }
+
+        .enviar{
+            border: none;
+            background-color: rgba(100, 6, 189, 0.596);
+            margin-top: 16px;
+            margin-left: 340px;
+            width: 80px;
+            height: 45px;
+            border-radius: 20px;
+            font-family: 'Dancing Script';
+            text-shadow: 1px, 1px, 1px rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer{
+            margin-top: -30px;
+            width: 102%;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'oswald';
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        @media (min-width: 600px) {
+
+            .checkbtn{
+                margin-left: 95%;
+            }
+
+            .nav-menu ul{
+                width: 100%;
+            }
+
+            .section-1{
+                height: 101%;
+            }
+
+            .section-2{
+                height: 101%;
+            }
+
+            .h1-left{
+                margin-left: 72%;
+            }
+
+            .p-left{
+                margin-left: 87%;
+            }
+
+            .bar-1{
+                margin-left: 200px;
+                margin-top: -1300px;
+            }
+
+            .bar-2{
+                margin-top: -520px;
+                margin-left: 840px;
+            }
+
+
+            .bar-3{
+                margin-left: 200px;
+                margin-top: 70px;
+            }
+
+            .bar-4{
+                margin-left: 840px;
+                margin-top: -520px;
+            }
+
+            .title{
+                margin-left: 230px;
+            }
+
+            .title-2{
+                margin-top: 10px;        
+                margin-left: 850px;
+            }
+
+            .title-3{
+                margin-top: 10px;   
+                margin-left: 230px;
+            }
+
+            .title-4{
+                margin-left: 850px;
+            }
+
+            .section-3{
+                width: 1500px;
+                height: 1400px;
+            }
+
+            .queja{
+                margin-left: 183px;
+            }
+
+            .enviar{
+                margin-top: -100px;
+                margin-left: 100px;
+            }
+
+
+        }
+        
+    </style>
+</html>
